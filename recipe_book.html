@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homixo SproutFlow | 50+ Details Masterclass</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1B4332;
+            --mid: #2D6A4F;
+            --light: #D8F3DC;
+            --text: #081C15;
+            --accent: #D4AF37;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text);
+            background: #fdfdfd;
+            line-height: 1.4;
+        }
+
+        /* Print & A4 Settings */
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            body {
+                background: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+        }
+
+        .container {
+            width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background: white;
+        }
+
+        .cover {
+            width: 210mm;
+            height: 297mm;
+            background: linear-gradient(135deg, #1B4332 0%, #081C15 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 100px 80px;
+            text-align: center;
+            color: white;
+            page-break-after: always;
+        }
+
+        .cover-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 6rem;
+            line-height: 1;
+            margin: 40px 0;
+        }
+
+        .recipe-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+            border: 1px solid #eee;
+            break-inside: avoid;
+        }
+
+        .category-badge {
+            background: var(--primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .recipe-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .recipe-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .recipe-meta {
+            text-align: right;
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--mid);
+            text-transform: uppercase;
+        }
+
+        .recipe-meta span {
+            display: block;
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+
+        .recipe-columns {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        .column-title {
+            font-size: 1rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: var(--text);
+            border-bottom: 2px solid var(--light);
+            display: inline-block;
+        }
+
+        .ingredients ul {
+            list-style: none;
+            font-size: 0.85rem;
+        }
+
+        .ingredients li {
+            padding: 4px 0;
+            border-bottom: 1px solid #fcfcfc;
+        }
+
+        .instructions ol {
+            padding-left: 15px;
+            font-size: 0.9rem;
+        }
+
+        .instructions li {
+            margin-bottom: 8px;
+        }
+
+        .pro-tip-box {
+            background: #fff9e6;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #ffeeba;
+            margin-top: 20px;
+            font-size: 0.85rem;
+            font-style: italic;
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cover">
+        <div style="font-size: 1.2rem; letter-spacing: 8px; font-weight: 800; color: var(--light);">HOMIXO PREMIUM</div>
+        <div class="cover-title">Sprout<br><i style="font-weight: 300;">Flow</i></div>
+        <div>
+            <div style="font-size: 2.2rem; font-weight: 800; letter-spacing: 4px; color: var(--light);">THE COMPLETE 50+
+                MASTERCLASS</div>
+        </div>
+        <div style="font-size: 0.9rem; opacity: 0.5;">© 2026 HOMIXO</div>
+    </div>
+
+    <div class="container" id="recipe-container">
+        <!-- I will fill this with exactly 52 detailed recipes using the requested format -->
+        <!-- RECIPE 1 TO 52 -->
+    </div>
+
+    <script>
+        const recipes = [
+            {
+                id: 1,
+                category: "Detox Salad",
+                title: "Rainbow Mung Wonder",
+                time: "12 Min",
+                cals: "142 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1 Cup Fresh Mung Sprouts", "1/2 Cup Ruby Pomegranate", "1 Medium Persian Cucumber", "10 Fresh Mint Leaves", "Half Lemon", "Pink Himalayan Salt", "1/2 tsp Roasted Cumin Powder"],
+                steps: [
+                    "Precision Steaming: Place Mung sprouts in a steamer basket over boiling water for exactly 2.5 minutes. This softens the outer skin while keeping the heart 'Al Dente' and preserving the delicate enzymes.",
+                    "Aromatics: While the sprouts steam, finely chiffonade the mint leaves. Avoid chopping them too small; long, thin strips preserve the essential oils better for a burst of flavor in every bite.",
+                    "The Base: Dice the cucumber into 1cm uniform cubes. Keep the skin on for extra fiber and a vibrant green color that adds to the visual appeal.",
+                    "The Assembly: In a chilled wooden or ceramic bowl, combine the pomegranate seeds and diced cucumber. Add the warm sprouts directly from the steamer.",
+                    "The Finish: Squeeze fresh lemon juice over the top while the sprouts are warm to allow the citrus to penetrate deep into the core. Season with pink salt and roasted cumin."
+                ],
+                tip: "DEEP DIVE: Adding roasted Jeera (Cumin) acts as a carminative, significantly aiding digestion and preventing any potential bloating for those new to a high-fiber sprout diet."
+            },
+            {
+                id: 2,
+                category: "Muscle Recovery",
+                title: "Zesty Chana Power Bowl",
+                time: "18 Min",
+                cals: "285 Kcal",
+                serves: "2 Adults",
+                ingredients: ["1.5 Cups Chana Sprouts", "1 Large Vine Tomato", "2 Green Chilies", "Massive Fresh Coriander Bunch", "1 tbsp Extra Virgin Olive Oil", "Organic Turmeric", "Ginger Juliennes"],
+                steps: [
+                    "Activation & Neutralization: Boil Chana sprouts in salted water with 1/2 tsp of turmeric for 7 minutes. This process neutralizes anti-nutrients and makes the protein hyper-absorbable.",
+                    "The Tempering: In a small heavy-bottomed pan, heat olive oil slightly. Add slit green chilies and ginger juliennes until they release a fragrant aroma.",
+                    "Juicy Base: Remove seeds from the tomato and dice the flesh into small cubes. Removing the seeds prevents the salad from becoming soggy during the resting phase.",
+                    "The Fusion: Toss the warm, drained Chana with the oil-chili-ginger mix. The residual heat will slightly 'blanch' the tomatoes, releasing their natural sweetness.",
+                    "Garnish Mastery: Finish with a generous amount of freshly chopped coriander. It acts as a heavy metal chelator, further cleansing your system while adding depth."
+                ],
+                tip: "NUTRITION TIP: The Vitamin C in tomato and lemon juice is essential here; it converts the high plant-based iron in black chana into a form your body can actually absorb into the bloodstream."
+            },
+            {
+                id: 3,
+                category: "Anti-Aging",
+                title: "Broccoli Sulforaphane Glow",
+                time: "8 Min",
+                cals: "95 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1/2 Cup Broccoli Sprouts (Raw)", "1 Crisp Green Apple", "15 Toasted Walnut Halves", "1 tsp Apple Cider Vinegar", "Black Pepper", "Raw Honey (optional)"],
+                steps: [
+                    "The Raw Principle: Never heat broccoli sprouts above 40°C. High temperatures destroy the myrosinase enzyme, which is required to convert glucoraphanin into anti-cancer Sulforaphane.",
+                    "Acid Prepping: Slice the green apple into paper-thin moons. Immediately dip them in water with a drop of apple cider vinegar to prevent oxidation and browning.",
+                    "The Bed: Create a beautiful circular bed of apple slices on a white plate, overlapping them slightly for a professional presentation.",
+                    "The Crown: Pile the broccoli sprouts high in the center of the apple bed. They should look like a small, thriving green forest.",
+                    "The Crunch: Hand-crush the toasted walnuts and sprinkle them over the sprouts. The healthy fats in walnuts help your body absorb the fat-soluble vitamins (A, E, K) in the sprouts."
+                ],
+                tip: "SCIENTIFIC FACT: These 3-day-old sprouts contain up to 100 times more sulforaphane per gram than a mature head of broccoli, making them the most powerful natural Nrf2 activator known to science."
+            },
+            {
+                id: 4,
+                category: "Sugar Balance",
+                title: "Methi Honey Bitter-Sweet",
+                time: "10 Min",
+                cals: "110 Kcal",
+                serves: "1 Adult",
+                ingredients: ["3/4 Cup Fenugreek (Methi) Sprouts", "1 Cup Ripe Papaya Cubes", "Dark Forest Honey", "Ceylon Cinnamon", "Fresh Mint"],
+                steps: [
+                    "Bitterness Control: Rinse your Methi sprouts three times in ice-cold water. This effectively removes surface saponins that cause the intense bitterness associated with fenugreek.",
+                    "Papaya Pairing: Dice a ripe papaya into 2cm cubes. Papaya contains papain, an enzyme that works synergistically with the fiber in Methi to optimize gut motility.",
+                    "The Folding: Use a light hand to fold the sprouts into the papaya cubes. Avoid mashing the fruit; you want distinct textures in every spoonful.",
+                    "Liquid Gold: Drizzle exactly one teaspoon of dark forest honey. The specific sweetness profile of forest honey masks the 'hit' of the methi without causing an insulin spike.",
+                    "Final Synergy: Sprinkle a dash of Ceylon cinnamon. Both cinnamon and methi work on the same metabolic pathways to optimize glucose management."
+                ],
+                tip: "SUGAR TIP: This specific recipe is best consumed exactly 15 minutes before a heavy carbohydrate meal. It prepares your insulin receptors for the incoming glucose load."
+            },
+            {
+                id: 5,
+                category: "High Protein",
+                title: "Living Sprouted Hummus",
+                time: "25 Min",
+                cals: "320 Kcal",
+                serves: "3 Adults",
+                ingredients: ["2.5 Cups Sprouted Chickpeas", "Raw Tahini", "3 Cloves Garlic", "Organic Lemon Juice", "Cold Pressed Olive Oil", "Smoked Paprika", "Ice Cubes"],
+                steps: [
+                    "Precision Steaming: Steam sprouted chickpeas for 15 minutes. Unlike canned beans, this preserves the 'Living' status while achieving a creamy, spreadable texture.",
+                    "Garlic Mellowing: Crush the garlic and let it sit in the fresh lemon juice for 5 minutes before blending. This 'pre-cooks' the garlic, removing the harsh bite.",
+                    "The Cold Blend: Process chickpeas, tahini, and garlic-lemon mix. Add two ice cubes during blending; the cold temperature helps emulsify the fats for a silkier finish.",
+                    "Plating Aesthetics: Spread the hummus on a flat plate and use the back of a spoon to create a deep spiral well in the center.",
+                    "The Reservoir: Fill the well with high-quality, cold-pressed olive oil and add a heavy dusting of smoked paprika and a few whole sprouts for texture."
+                ],
+                tip: "CULINARY CHOICE: Sprouting chickpeas increases their protein bioavailability and removes lectins, making this far more digestive-friendly than traditional Mediterranean hummus."
+            },
+            {
+                id: 6,
+                category: "Vitality Bowl",
+                title: "Quinoa Clover Fusion",
+                time: "22 Min",
+                cals: "310 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1/2 Cup Tri-Color Quinoa", "1/2 Cup Fresh Clover Sprouts", "Charred Bell Peppers", "Creamy Feta Cheese", "Cold Pressed Walnut Oil", "Vegetable Broth"],
+                steps: [
+                    "Grain Infusion: Cook the quinoa in vegetable broth rather than water. This adds a savory depth that complements the earthy sprout profile.",
+                    "The Char: Roast bell peppers over an open flame until the skin is black. Peel under cold water and slice the sweet, smoky flesh into thin strips.",
+                    "The Assembly: Gently toss the cooled quinoa with the pepper strips and raw clover sprouts. Clover is delicate; do not over-mix.",
+                    "Feta Balance: Crumble high-quality feta over the top. The saltiness of the cheese is the perfect counterpoint to the sweetness of the charred peppers.",
+                    "Omega Finish: Drizzle with a touch of cold-pressed walnut oil. It provides the essential Omega-3 fatty acids needed to make this a truly 'Brain-Friendly' lunch."
+                ],
+                tip: "ENERGY TIP: This meal provides a perfect balance of slow-burning complex carbs (Quinoa) and fast-acting enzymes (Clover), ensuring sustained mental focus for hours."
+            },
+            {
+                id: 7,
+                category: "Keto Power",
+                title: "Spicy Lentil Sensation",
+                time: "15 Min",
+                cals: "158 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1 Cup Crimson Lentil Sprouts", "1 Red Onion", "Fresh Limes", "Chaat Masala", "Green Chilies", "Kashmiri Red Chili Powder"],
+                steps: [
+                    "Drying Protocol: Rinse lentil sprouts in cold distilled water and pat them completely dry with a clean kitchen towel. Dry sprouts absorb spices much better.",
+                    "Micro-Dicing: Slice the red onion into the thinnest possible longitudinal slivers. This provides a sharp, clean crunch that matches the texture of the lentils.",
+                    "The Spice Rub: Toss the dry lentils with authentic Chaat Masala and finely minced green chilies. Add a pinch of Kashmiri red chili powder for color without excessive heat.",
+                    "The Rest: Let the mixture sit for 5 minutes. This 'quick-pickles' the onions and softens the outer shell of the lentils without the need for heat.",
+                    "Acid Activation: Squeeze two whole limes over the bowl right before serving. The acid 'wakes up' the folate and minerals for maximum nutritional impact."
+                ],
+                tip: "HEART HEALTH: Crimson lentils are incredibly high in magnesium and folate, essential for cardiovascular health. Eating them sprouted preserves 100% of these heat-sensitive nutrients."
+            },
+            {
+                id: 8,
+                category: "Healthy Fats",
+                title: "Alfalfa Avocado Sanctuary",
+                time: "10 Min",
+                cals: "245 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1 Ripe Hass Avocado", "1 Cup Fresh Alfalfa Sprouts", "Dry Roasted Sunflower Seeds", "Flaky Sea Salt", "High-Quality Chili Oil"],
+                steps: [
+                    "Boat Preparation: Cut the avocado in half and remove the pit. Use a large spoon to lift the flesh out whole, then slice into thin fanned shapes.",
+                    "The Seed Bed: Place the avocado fans on a plate and sprinkle generously with sunflower seeds. The 'nutty' crunch of the seeds provides a base for the delicate sprouts.",
+                    "Sprout Nesting: Take a massive handful of Alfalfa sprouts. They should be loosely placed over the avocado to create a 'nest' effect for maximum airiness.",
+                    "The Infusion: Drizzle a few drops of high-quality chili oil. The oil serves as a carrier for the sprout's nutrition and adds a subtle heat.",
+                    "Mineral Finish: Finish with a generous pinch of flaky sea salt. The large salt flakes provide a different texture than regular table salt."
+                ],
+                tip: "FAT ABSORPTION: Avocado's healthy fats help your body absorb the high levels of Vitamin K and Vitamin A found in the delicate alfalfa sprouts, making it a nutritional 'Power Pair'."
+            },
+            {
+                id: 9,
+                category: "Metabolism",
+                title: "Spicy Mung Asian Wok",
+                time: "14 Min",
+                cals: "195 Kcal",
+                serves: "1 Adult",
+                ingredients: ["2 Cups Mung Sprouts", "Sriracha Sauce", "Toasted Sesame Seeds", "Scallions", "Rice Vinegar", "Fresh Ginger"],
+                steps: [
+                    "Cold Prep: Toss raw mung sprouts into a pre-chilled metal bowl. Cold sprouts maintain their structure and 'snap' when mixed with sauces.",
+                    "The Emulsion: Whisk together sriracha, rice vinegar, and a small grating of fresh ginger until it forms a slightly thickened dressing.",
+                    "Coating Technique: Pour the spicy dressing over the sprouts and toss vigorously with tongs to ensure every single sprout is glazed.",
+                    "Herb Freshness: Add finely sliced scallions (green parts only) for a sharp, fresh bite that cuts through the heat of the sriracha.",
+                    "Garnish: Sprinkle white and black toasted sesame seeds for an earthy after-note and a professional, multi-colored look."
+                ],
+                tip: "SPICE FACT: Capsaicin in sriracha combined with raw mung enzymes triggers a 'Thermic Effect', naturally increasing your basal metabolic rate during digestion."
+            },
+            {
+                id: 10,
+                category: "Energy High",
+                title: "Walnut & Clover Energy Boost",
+                time: "5 Min",
+                cals: "210 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1 Cup Clover Sprouts", "12 Walnut Halves", "Dried Cranberries", "Balsamic Glaze", "Black Pepper"],
+                steps: [
+                    "Sprout Foundation: Create a thick, dense bed of clover sprouts on a wooden plate. This variety is known for its mild, sweet flavor profile.",
+                    "Nut Layering: Evenly distribute the walnut halves over the sprouts. Walnuts are shaped like the brain and are ironically the best nut for cognitive health.",
+                    "Fruity Accents: Sprinkle dried cranberries over the top to provide a burst of natural tartness and concentrated antioxidants.",
+                    "The Drizzle: Use a zig-zag motion to apply a thick balsamic reduction glaze. The acidity of the glaze brings out the sweetness of the clover.",
+                    "Final Season: Add a small, fresh crack of black pepper. Pepper actually enhances the absorption of many plant-based nutrients."
+                ],
+                tip: "BRAIN FUEL: The DHA-supporting fats in walnuts and the high mineral profile of clover make this the ultimate midday snack for overcoming the '3 PM slump'."
+            },
+            {
+                id: 11,
+                category: "Breakfast",
+                title: "Masterclass Sprout Poha",
+                time: "20 Min",
+                cals: "350 Kcal",
+                serves: "2 Adults",
+                ingredients: ["2 Cups Thick Poha (Flattened Rice)", "1 Cup Mixed Sprouts", "Curry Leaves", "Mustard Seeds", "Roasted Peanuts", "Turmeric Powder"],
+                steps: [
+                    "Hydration Protocol: Rinse Poha in a sieve for exactly 15 seconds. Let it rest in the sieve to fluff up; do not soak it in a bowl or it will turn into mush.",
+                    "The Tempering: Pop mustard seeds in a drop of oil, then add fresh curry leaves and whole peanuts. Roast until the peanuts are golden and crunchy.",
+                    "The Sprout Sauté: Stir in the mixed sprouts and a pinch of turmeric. Cook for only 3 minutes to keep them 'alive' but warm.",
+                    "The Merge: Add the fluffed Poha to the pan. Mix with a very light hand (use a fork if necessary) to avoid breaking the rice flakes.",
+                    "Final Steam: Cover the pan with a tight lid for 2 minutes on the lowest heat. This allows the sprout's moisture to steam the rice through."
+                ],
+                tip: "SUSTAINED ENERGY: This traditional breakfast is transformed into a 'Slow-Release' meal when you add the living sprout enzymes, preventing the usual post-carb crash."
+            },
+            {
+                id: 12,
+                category: "Peak Performance",
+                title: "The Hulk Smoothie",
+                time: "5 Min",
+                cals: "220 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1 Cup Fresh Spinach", "1/2 Cup Broccoli Sprouts (Raw)", "1 Frozen Banana", "200ml Coconut Water", "1 tbsp Chia Seeds"],
+                steps: [
+                    "Liquids First: Always add the coconut water to the base of the blender first to allow for a smooth whirlpool effect.",
+                    "Greens Loading: Add the spinach and the living broccoli sprouts. The sprouts provide a slightly spicy kick that the fruit will balance.",
+                    "Texture & Cold: Add the frozen banana chunks. Using frozen fruit instead of ice keeps the smoothie creamy and undiluted.",
+                    "The Blend: Pulse three times to break the fruit, then blend on the highest setting for 45-60 seconds until a deep vibrant green.",
+                    "Nutrient Density: Serve in a chilled glass and sprinkle dry chia seeds on top for extra fiber and a fun crunch."
+                ],
+                tip: "CHLOROPHYLL BOOST: This smoothie is a blood-cleansing powerhouse. Drinking it on an empty stomach in the morning maximizes enzyme and mineral absorption."
+            },
+            {
+                id: 13,
+                category: "Deep Detox",
+                title: "Clear Mung Detox Broth",
+                time: "15 Min",
+                cals: "85 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1 Cup Mung Sprouts", "2-inch Piece of Ginger", "Lemon Peel Strips", "500ml Mineral Water", "Pink Himalayan Salt"],
+                steps: [
+                    "Aromatic Infusion: Slice the ginger into thin rounds. Boil the water with ginger and lemon peel for 5 minutes until the water turns slightly golden.",
+                    "The Gentle Blanch: Turn off the heat entirely and add the mung sprouts immediately. Do not boil the sprouts; the residual heat is enough.",
+                    "Therapeutic Steeping: Cover the pot and let the mixture steep for 10 minutes, much like you would steep a medicinal herb tea.",
+                    "Serving Protocol: Pour into a large mug. You should drink the warm, infused liquid first, then eat the softened sprouts at the bottom.",
+                    "Final Acidity: Squeeze half a fresh lemon into the mug only at the very end to keep the Vitamin C heat-stable."
+                ],
+                tip: "DIGESTIVE RESET: This is the ultimate 'Rest Day' meal. It is incredibly gentle on the gut, highly alkalizing, and helps flush out excess sodium from the body."
+            },
+            {
+                id: 14,
+                category: "Healthy Dinner",
+                title: "Salmon on Alfalfa Bed",
+                time: "25 Min",
+                cals: "450 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1 Fresh Salmon Fillet", "2 Cups Alfalfa Sprouts", "Fresh Asparagus Spears", "Lemon Butter Sauce", "Fresh Dill"],
+                steps: [
+                    "The Sear: Cook the salmon in a hot pan skin-side down for 5 minutes until the skin is perfectly crispy and the fat renders.",
+                    "Asparagus Prep: Blanch the asparagus in the same pan for 3 minutes. The residual salmon fat will season the vegetables perfectly.",
+                    "The Cooling Bed: Spread a generous amount of Alfalfa sprouts as a thick, cool nest on the serving plate.",
+                    "The Assembly: Place the hot salmon and asparagus directly onto the cool alfalfa nest. This creates a temperature and texture contrast.",
+                    "Sauce Finish: Drizzle warm lemon butter and fresh dill over everything; the heat of the sauce will slightly wilt the top layer of sprouts."
+                ],
+                tip: "OMEGA-3 SYNERGY: The high-quality monounsaturated fats in salmon act as a carrier for the fat-soluble vitamins (K, A) concentrated in the alfalfa sprouts."
+            },
+            {
+                id: 15,
+                category: "Traditional",
+                title: "Sprout Besan Pancakes",
+                time: "15 Min",
+                cals: "275 Kcal",
+                serves: "2 Adults",
+                ingredients: ["1 Cup Chickpea Flour (Besan)", "1/2 Cup Fresh Mung Sprouts", "1 tbsp Minced Ginger", "Pinch of Hing (Asafoetida)", "1 Green Chili"],
+                steps: [
+                    "The Batter: Whisk besan and water until it reaches a thick pouring consistency (similar to crepe batter). Let it rest for 10 minutes.",
+                    "The Infusion: Stir in the raw mung sprouts, minced ginger, and finely chopped green chili. Add a pinch of Hing to assist with legume digestion.",
+                    "Heat Mastery: Use a heavy non-stick pan or cast-iron tawa with a drop of ghee or cold-pressed oil. Heat until a drop of water sizzles.",
+                    "The Cook: Pour half the batter and spread into a circular shape. Cook for 3 minutes until small bubbles appear on the surface.",
+                    "The Flip: Flip and cook the other side until golden brown and crispy. The sprouts inside will be perfectly steamed and tender."
+                ],
+                tip: "PROTEIN HIT: These pancakes are 100% plant-based and contain more bioavailable protein than many meat-based breakfast options."
+            },
+            {
+                id: 16,
+                category: "Ancient Grain",
+                title: "Buckwheat Sprout Mousse",
+                time: "15 Min",
+                cals: "240 Kcal",
+                serves: "2 Adults",
+                ingredients: ["1 Cup Sprouted Buckwheat", "Raw Cocoa Powder", "Date Syrup", "Vanilla Extract", "Pinch of Sea Salt", "Frozen Raspberries"],
+                steps: [
+                    "Grain Processing: Place the sprouted buckwheat in a high-speed blender. Sprouted buckwheat is soft and nutty, unlike the rock-hard raw seeds.",
+                    "Flavor Fusion: Add raw cocoa powder, date syrup, and a splash of vanilla. The date syrup provides a low-glycemic sweetness that doesn't spike insulin.",
+                    "The Emulsion: Process on high until the mixture becomes completely silky and resembles a traditional French chocolate mousse.",
+                    "Setting Phase: Transfer to glass ramekins and refrigerate for 20 minutes. The natural starches in buckwheat will set the mousse naturally without gelatin.",
+                    "Garnish Aesthetics: Top with a few whole sprouts for a textural contrast and a handful of tart frozen raspberries to cut through the richness."
+                ],
+                tip: "GUILT-FREE DESSERT: Sprouting buckwheat removes the 'grainy' proteases, making it as smooth as a dairy dessert but with zero refined sugar or gluten."
+            },
+            {
+                id: 17,
+                category: "Morning Savory",
+                title: "Mung-Egg Frittata",
+                time: "12 Min",
+                cals: "310 Kcal",
+                serves: "1 Adult",
+                ingredients: ["3 Organic Eggs", "1/2 Cup Fresh Mung Sprouts", "Red Onion", "Cherry Tomatoes", "Sharp Cheddar", "Butter"],
+                steps: [
+                    "Aearation: Whisk the eggs in a bowl for at least 60 seconds until they are extremely airy. This is the secret to a fluffy, restaurant-style frittata.",
+                    "The Sauté: In a small oven-safe pan, cook finely diced onions and halved cherry tomatoes in butter until they start to caramelize.",
+                    "Incorporation: Pour the eggs over the vegetables and immediately stir in the raw mung sprouts. The sprouts will cook in the residual heat.",
+                    "The Melt: Sprinkle grated cheddar over the surface and put a lid on the pan for 2 minutes to allow the cheese to melt and the eggs to set.",
+                    "Final Touch: Slide the frittata onto a warm plate. The mung sprouts provide a surprising 'crunch' inside the soft, savory egg blanket."
+                ],
+                tip: "TEXTURE MASTERCLASS: The juxtaposition of the crunchy mung sprouts and the velvety eggs creates a sophisticated sensory experience rare in breakfast dishes."
+            },
+            {
+                id: 18,
+                category: "Detox Snack",
+                title: "Savory Date Poppers",
+                time: "6 Min",
+                cals: "145 Kcal",
+                serves: "1 Adult",
+                ingredients: ["5 Large Medjool Dates", "Creamy Almond Butter", "Fresh Methi (Fenugreek) Sprouts", "Maldon Sea Salt"],
+                steps: [
+                    "Date Prep: Slice each Medjool date lengthwise and remove the pit. Medjool dates are preferred for their 'caramel' texture and large size.",
+                    "Stuffing: Fill the cavity of each date with a generous teaspoon of thick, stone-ground almond butter.",
+                    "The Sprout Core: Push 5-6 fresh methi sprouts deep into the almond butter. The butter will hold the sprouts in place.",
+                    "Mineral Balance: Add a single large flake of Maldon sea salt to the top of each stuffed date. Salt is essential to bridge the sweet and bitter flavors.",
+                    "Chilling: Place the poppers in the freezer for 10 minutes. This firms up the butter and makes the dates chew like gourmet candy."
+                ],
+                tip: "FLAVOR PAIRING: Date sweetness perfectly cancels out the methi bitterness, while the sprouts regulate the date's natural sugar spike for sustained energy."
+            },
+            {
+                id: 19,
+                category: "Lunch Bowl",
+                title: "Mediterranean Pita Glow",
+                time: "10 Min",
+                cals: "295 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Whole Wheat Pita", "Classic Hummus", "Fresh Clover Sprouts", "Kalamata Olives", "Persian Cucumber", "Small Lime"],
+                steps: [
+                    "Toast & Pocket: Warm the pita in a toaster until it puffs up. Slice the top off to reveal the inner pocket while it's still steaming.",
+                    "Wall Slathering: Use a butter knife to slather both inside walls of the pita with a thick layer of creamy, garlicky hummus.",
+                    "The Layers: Drop in sliced olives and diced cucumber. These provide the salty and hydrating elements of the Mediterranean profile.",
+                    "The Hero: Pack as many clover sprouts as possible into the center. Clover is 90% water and provides a massive, refreshing volume to the meal.",
+                    "Acid Finish: Squeeze a tiny bit of lime juice directly into the pocket. The acidity cuts through the fat of the hummus and 'wakes up' the sprouts."
+                ],
+                tip: "HYDRATION LUNCH: Clover sprouts are incredibly hydrating, making this the perfect light lunch for maintaining mental clarity during a busy workday."
+            },
+            {
+                id: 20,
+                category: "Fiber King",
+                title: "Quinoa Sprout Biryani",
+                time: "30 Min",
+                cals: "350 Kcal",
+                serves: "2 Adults",
+                ingredients: ["1 Cup White Quinoa", "1 Cup Mixed Sprouts (Mung/Chana)", "Biryani Masala", "Saffron Strands", "Greek Yogurt", "Mint Leaves"],
+                steps: [
+                    "Base Cook: Prepare the quinoa in a rice cooker or pot until fluffed. Quinoa has a higher protein-to-carb ratio than the traditional Basmati rice.",
+                    "The Spiced Masala: Sauté the mixed sprouts with authentic Biryani spices and caramelized onions until the sprouts are well-coated.",
+                    "The Layering (Dum): Place the fluffy quinoa over the sprout mixture in a heavy-bottomed pot. Do not mix; layering is key for flavor distribution.",
+                    "Saffron Infusion: Dissolve saffron strands in 2 tbsp of warm water and pour over the quinoa. This provides the iconic aroma and golden color.",
+                    "The Steam: Seal the lid and cook on the lowest possible heat for 10 minutes. This 'Dum' process allows the sprout juices to steam into the quinoa."
+                ],
+                tip: "HEALTHY TWIST: This Biryani contains 4x more fiber and 3x more protein than traditional white rice versions, with a much lower glycemic index."
+            },
+            {
+                id: 21,
+                category: "Tropical",
+                title: "Pineapple Sprout Salsa",
+                time: "10 Min",
+                cals: "130 Kcal",
+                serves: "2 Adults",
+                ingredients: ["Fresh Mung Sprouts", "Ripe Pineapple", "Fresh Cilantro", "Lime juice", "Red Onion", "Jalapeno"],
+                steps: [
+                    "The Brunoise: Cut the fresh pineapple into tiny, uniform 0.5cm cubes. Consistency in size ensures a balanced flavor in every bite.",
+                    "The Mix: Combine the pineapple with fresh mung sprouts and finely diced red onion in a glass bowl. Avoid metal bowls for acidic salsas.",
+                    "The Herb: Finely chop a large bunch of cilantro. Use the stems as well; they contain more flavor and crunch than the leaves.",
+                    "The Heat: Add a tiny amount of minced jalapeno (remove seeds for less heat) to create a sweet-and-spicy dynamic.",
+                    "Maceration: Squeeze two limes over the mix. Let the salsa sit for 10 minutes; the lime juice will draw out the fruit juices to form a natural dressing."
+                ],
+                tip: "ENZYMATIC SYNERGY: Pineapple's Bromelain and Mung sprouts' Protease are a powerful duo for aiding protein digestion and reducing gut inflammation."
+            },
+            {
+                id: 22,
+                category: "Low Carb",
+                title: "Zucchini Sprout Zoodles",
+                time: "15 Min",
+                cals: "185 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1 Large Zucchini", "Alfalfa Sprouts", "Fresh Basil Pesto", "Toasted Pine Nuts", "Parmesan Shavings"],
+                steps: [
+                    "The Noodles: Use a spiralizer or a wide peeler to create long, thin noodles from the zucchini. Stop when you reach the seedy core.",
+                    "De-Hydration: Sprinkle the zoodles with salt and let them sit for 5 minutes. Squeeze out the excess water to prevent a watery sauce.",
+                    "Cold Toss: Mix the zucchini ribbons with two tablespoons of fresh basil pesto. Pesto's fat helps your body absorb the zucchini's nutrients.",
+                    "The Sprout Fold: Gently fold in a large handful of fresh Alfalfa sprouts. Alfalfa and Zucchini share a similar 'green' flavor profile.",
+                    "The Finish: Garnish with toasted pine nuts and a few shavings of aged Parmesan for a savory, nutty depth."
+                ],
+                tip: "NO-HEAT PASTA: This meal is 100% raw and living. By avoiding heat, you preserve 100% of the Vitamin C and anti-aging enzymes in the Alfalfa."
+            },
+            {
+                id: 23,
+                category: "Super Protein",
+                title: "Sprouted Lentil Hummus",
+                time: "20 Min",
+                cals: "310 Kcal",
+                serves: "3 Adults",
+                ingredients: ["2 Cups Sprouted Crimson Lentils", "Raw Tahini", "Roasted Garlic", "Cumin Powder", "Cold Pressed Olive Oil", "Ice Cubes"],
+                steps: [
+                    "Flash Steam: Steam the sprouted lentils for 10 minutes. Lentils are much smaller than chickpeas and soften much faster.",
+                    "Initial Pulse: Process the warm lentils with roasted garlic and tahini. Lentil sprouts have a more 'earthy' taste than chickpeas.",
+                    "Spice & Fat: Add roasted cumin and a heavy drizzle of olive oil while the processor is running to create a stable emulsion.",
+                    "The Silk Secret: Add 2-3 ice cubes to the blender. The sudden drop in temperature creates a much smoother, airier hummus texture.",
+                    "Garnish: Spread on a plate and top with a few whole, unblended sprouts and a sprinkle of paprika for a beautiful contrast."
+                ],
+                tip: "LENTIL POWER: Lentil sprouts have one of the highest protein-per-gram ratios in the sprout world and are exceptionally high in iron and potassium."
+            },
+            {
+                id: 24,
+                category: "Energy Bowl",
+                title: "Sweet Corn & Mung Salad",
+                time: "8 Min",
+                cals: "165 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Fresh Mung Sprouts", "Organic Sweet Corn", "Heirloom Tomato", "Fresh Lime", "Black Peppercorns"],
+                steps: [
+                    "The Quick Blanch: Dip the corn kernels in boiling water for 30 seconds. This maintains the 'pop' of the corn while making it safe to eat.",
+                    "Temperature Contrast: Mix the warm corn with ice-cold mung sprouts. This temperature interplay is a hallmark of professional salad making.",
+                    "Juicy Component: Dice the tomato and add it to the bowl along with all the residual juice from the cutting board.",
+                    "Heavy Seasoning: Use a generous amount of fresh cracked black pepper and lime juice. Avoid heavy oils; keep it light and watery.",
+                    "Immediate Consumption: This salad is best eaten immediately while the textures of the corn and mung are at their most distinct."
+                ],
+                tip: "FIBER COMBO: The insoluble fiber in corn paired with the soluble fiber in mung sprouts creates the perfect 'Gut Cleanser' for better digestion."
+            },
+            {
+                id: 25,
+                category: "High Enzyme",
+                title: "Radish Sprout Detox",
+                time: "5 Min",
+                cals: "95 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Radish Sprouts", "English Cucumber", "Green Chili Flakes", "Lemon Juice", "Sea Salt"],
+                steps: [
+                    "Ribboning: Slice the cucumber into paper-thin, long ribbons using a vegetable peeler. This maximizes the surface area for the dressing.",
+                    "Plating the Swirl: Arrange the cucumber ribbons in a decorative swirl on a shallow white plate for a high-end look.",
+                    "Sprouting the Flavor: Scatter a large handful of radish sprouts over the cucumber. Radish sprouts have a natural 'wasabi-like' spicy kick.",
+                    "The Mellowing: Squeeze fresh lemon over the radish sprouts. The citric acid slightly mellows the sharp heat of the radish.",
+                    "Metabolic Finish: Add a pinch of sea salt and dried green chili flakes to kickstart your metabolism for the afternoon."
+                ],
+                tip: "LIVER HEALTH: Radish sprouts contain specific sulfur compounds (Isothiocyanates) that directly support the liver's Phase II detoxification pathways."
+            },
+            {
+                id: 26,
+                category: "Fuel",
+                title: "Sprout & Turkey Wrap",
+                time: "7 Min",
+                cals: "220 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Lean Turkey Slices", "Fresh Alfalfa Sprouts", "Dijon Mustard", "Organic Honey", "Whole-Wheat Wrap"],
+                steps: [
+                    "The Base Dressing: Mix one teaspoon each of honey and mustard. Spread this 'Golden Dressing' evenly across the entire surface of the wrap.",
+                    "Protein Layer: Lay down thin slices of turkey. Turkey is the leanest protein source and provides a neutral base for the sprouts.",
+                    "The Sprout Wall: Add a massive, 2-inch thick layer of Alfalfa. The goal is for the wrap to be mostly sprouts, not mostly bread.",
+                    "Tension Rolling: Roll the wrap as tightly as possible to create a dense core. This prevents the sprouts from falling out when you take a bite.",
+                    "The Bias Cut: Slice the wrap on a very steep diagonal (45 degrees). This showcases the vibrant green sprout filling and makes for a beautiful lunch."
+                ],
+                tip: "ANTI-SOGGY TIP: Alfalfa is unique because it doesn't release water like lettuce does, so your wrap stays crisp and dry even after 4 hours in a lunchbox."
+            },
+            {
+                id: 27,
+                category: "Gourmet",
+                title: "Seared Scallops on Alfalfa Bed",
+                time: "15 Min",
+                cals: "320 Kcal",
+                serves: "2 Adults",
+                ingredients: ["6 Diver Scallops", "Alfalfa Nest", "Grass-Fed Butter", "Dry White Wine", "Lemon Zest"],
+                steps: [
+                    "Precision Searing: Pat the scallops bone-dry. Sear in a screaming hot pan with butter for exactly 2 minutes per side until a golden crust forms.",
+                    "The Deglaze: Add a splash of white wine to the pan to lift the caramelized bits (the fond). This creates a quick, intense pan sauce.",
+                    "Bed Preparation: Create two thick Alfalfa 'nests' on warm plates. The Alfalfa should be roughly 3 inches high.",
+                    "The Resting: Place the hot scallops directly into the cool green nest. The residual heat will slightly steam the bottom of the sprouts.",
+                    "Final Glaze: Pour the buttery pan juices over the scallops and sprouts. Finish with fresh lemon zest and a crack of black pepper."
+                ],
+                tip: "CONTRAST DINING: The extreme heat and richness of the scallops against the cool, fresh alfalfa is a culinary combination found in Michelin-starred menus."
+            },
+            {
+                id: 28,
+                category: "Traditional",
+                title: "Ancient Sprout Lentil Dal",
+                time: "35 Min",
+                cals: "290 Kcal",
+                serves: "3 Adults",
+                ingredients: ["2 Cups Sprouted Red Lentils", "Ginger-Garlic Paste", "Onion Puree", "A2 Ghee", "Turmeric", "Cumin Seeds"],
+                steps: [
+                    "The Pressure Cook: Cook the sprouted lentils with 4 cups of water in a pressure cooker. Sprouted lentils cook 30% faster than dry ones.",
+                    "The Tadka (Tempering): Sauté cumin seeds in ghee until they splutter. Add the onion puree and ginger-garlic paste; cook until the oil separates.",
+                    "The Fusion: Stir the boiled, softened sprouts into the golden tadka. Mash a few lentils with the back of the spoon to thicken the gravy.",
+                    "Mellow Simmering: Cook on low for 15 minutes. This allows the spices to penetrate the core of the sprouts.",
+                    "The Garnish: Finish with a generous dollop of butter and fresh coriander. Serve with Sprout Poha or whole wheat roti."
+                ],
+                tip: "DIGESTION FACT: Sprouting red lentils before cooking them into a dal makes them almost 100% 'zero-gas', making it safe for evening consumption."
+            },
+            {
+                id: 29,
+                category: "Keto Power",
+                title: "Avocado Alfalfa Boat",
+                time: "5 Min",
+                cals: "245 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1 Large Avocado", "Fresh Alfalfa Sprouts", "Hemp Seeds", "Lime Juice", "Chili Flakes"],
+                steps: [
+                    "Boat Construction: Slice a ripe avocado in half and remove the stone. Do not peel; the skin acts as the natural serving bowl.",
+                    "Cavity Expansion: Use a spoon to slightly enlarge the hole where the stone was, mixing the extra avocado with the sprouts later.",
+                    "Filling: Pack the cavity with a mountain of fresh Alfalfa sprouts. They should spill over the sides like a waterfall.",
+                    "Nutrient Seeding: Sprinkle raw hemp seeds over the sprouts for a nutty flavor and a boost of complete plant-based protein.",
+                    "Acid & Heat: Squeeze lime heavily over the entire half and add a pinch of chili flakes for a metabolic kick."
+                ],
+                tip: "KETO MINERALS: Alfalfa is one of the densest mineral sources on earth, helping to replenish electrolytes that are often lost on a ketogenic diet."
+            },
+            {
+                id: 30,
+                category: "Italian",
+                title: "Classic Sprout Bruschetta",
+                time: "10 Min",
+                cals: "190 Kcal",
+                serves: "2 Adults",
+                ingredients: ["Sourdough Baguette", "Mixed Micro-Sprouts", "Roma Tomatoes", "Garlic Clove", "Extra Virgin Olive Oil"],
+                steps: [
+                    "The Toast: Slice the baguette on a bias and toast until very crunchy. The crunch is the foundation of a good bruschetta.",
+                    "The Garlic Rub: Rub a raw garlic clove over the rough surface of the hot bread. The heat will melt the garlic essence directly into the bread.",
+                    "The Topping Mix: In a bowl, toss diced tomatoes and mixed micro-sprouts with plenty of high-quality olive oil and a pinch of salt.",
+                    "Assembly: Pile the mixture high on the garlic bread. Ensure the tomato juices slightly soak into the top layer of the bread.",
+                    "Herbal Finish: Add a single leaf of fresh basil and a few extra raw sprouts on top for a 'Electric' fresh flavor."
+                ],
+                tip: "FLAVOR DYNAMICS: Raw garlic and living sprouts provide a sharp, vibrant taste that cooked toppings simply cannot replicate."
+            },
+            {
+                id: 31,
+                category: "Protein High",
+                title: "Classic Chana Sprout Chaat",
+                time: "12 Min",
+                cals: "210 Kcal",
+                serves: "2 Adults",
+                ingredients: ["2 Cups Black Chana Sprouts", "Fresh Ruby Pomegranate", "Red Onion", "Chaat Masala", "Black Salt", "Cilantro"],
+                steps: [
+                    "Washing Protocol: Rinse the black chana sprouts in filtered water and dry them completely. Surface moisture dilutes the spices.",
+                    "The Mix: In a large glass bowl, combine the sprouts with fresh pomegranate seeds and finely diced red onion.",
+                    "The Spice Rub: Add two teaspoons of authentic Chaat Masala and a pinch of black salt (Kala Namak). Black salt gives it a unique 'sulfury' street-food kick.",
+                    "Acid Activation: Squeeze a whole lime over the mix. The acid helps the spices stick to the smooth skin of the chana.",
+                    "Garnish: Top with a massive amount of freshly chopped cilantro. It's best served at room temperature as a high-protein afternoon snack."
+                ],
+                tip: "IRON BOOST: Black chana is the king of iron; the pomegranate and lime provide the Vitamin C catalyst needed for your body to actually absorb that iron."
+            },
+            {
+                id: 32,
+                category: "Smoothie Bowl",
+                title: "Clover Berry Yogurt Parfait",
+                time: "8 Min",
+                cals: "240 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Thick Greek Yogurt", "Fresh Clover Sprouts", "Blueberries", "Grain-Free Granola", "Manuka Honey"],
+                steps: [
+                    "Foundation Layer: Start with a thick layer of unsweetened Greek yogurt in a clear glass bowl or mason jar.",
+                    "The Green Bed: Add a 1-inch thick layer of raw clover sprouts. Clover's mild flavor blends perfectly with dairy.",
+                    "Berry Burst: Add a handful of fresh blueberries and a generous drizzle of Manuka honey for its medicinal properties.",
+                    "Crunch Factor: Top with a sprinkle of low-sugar granola. The granola provides a structural contrast to the soft yogurt and sprouts.",
+                    "Final Aesthetics: Place one final decorative sprig of clover on top. This is a breakfast that looks as good as it feels."
+                ],
+                tip: "PROBIOTIC SYNERGY: Living sprouts and active yogurt cultures are a gut-health 'Dream Team', optimizing your microbiome with every bite."
+            },
+            {
+                id: 33,
+                category: "Asian Fusion",
+                title: "Living Sprout Spring Rolls",
+                time: "25 Min",
+                cals: "160 Kcal",
+                serves: "2 Adults",
+                ingredients: ["Rice Paper Wrappers", "Clover Sprouts", "Steamed Shrimp", "Fresh Mint", "Hoisin Sauce", "Peanut Butter"],
+                steps: [
+                    "Wrapper Prep: Dip a rice paper wrapper in warm water for exactly 5 seconds. Lay it flat on a damp kitchen towel.",
+                    "Core Layering: Place a dense mound of clover sprouts in the center first. They act as the structural 'skeleton' of the roll.",
+                    "Protein & Herb: Add sliced shrimp and two whole mint leaves. The mint provides a cooling note that balances the spicy dipping sauce.",
+                    "The Roll: Fold the sides in and roll as tightly as a cigar. A tight roll ensures the sprouts stay crunchy and don't fall out.",
+                    "The Dip: Mix hoisin sauce with a teaspoon of peanut butter for a rich, savory dip that complements the fresh rolls."
+                ],
+                tip: "LOW-CAL DINNER: These rolls are almost zero-carb and very low in calories, making them the ultimate guilt-free late-night dinner."
+            },
+            {
+                id: 34,
+                category: "Deep Detox",
+                title: "Ginger Mung Healing Broth",
+                time: "15 Min",
+                cals: "110 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Fresh Mung Sprouts", "3-inch Piece of Ginger", "Star Anise", "Turmeric Root", "Black Peppercorns"],
+                steps: [
+                    "Aromatic Base: Boil fresh ginger slices and star anise in 500ml of water for 10 minutes to create a concentrated infusion.",
+                    "Root Addition: Stir in freshly grated turmeric root (or powder) and a crack of black pepper to activate the curcumin.",
+                    "Sprout Incorporation: Add the mung sprouts and immediately turn off the heat. Use a lid to trap the steam for 3 minutes.",
+                    "The Rest: Let the broth cool until it's just warm enough to sip. This protects the delicate enzymes in the sprouts from heat damage.",
+                    "Serving: Drink the liquid as a medicinal tea and eat the sprouts to satisfy your hunger. It's a complete internal flush."
+                ],
+                tip: "ANTI-INFLAMMATORY: This broth is designed to kill inflammation in the gut and joints. The heat of ginger and turmeric is balanced by the cool mung."
+            },
+            {
+                id: 35,
+                category: "Professional Salad",
+                title: "The Ultimate Rainbow Bowl",
+                time: "15 Min",
+                cals: "185 Kcal",
+                serves: "2 Adults",
+                ingredients: ["Mung", "Chana", "Lentil", "Alfalfa", "Clover", "Blood Orange Segments", "Mint"],
+                steps: [
+                    "Segmenting: Peel a blood orange and remove all the white pith. Slice between the membranes to get clean, 'filleted' segments.",
+                    "The Great Mix: Gently toss five different sprout varieties together in a massive wooden bowl. Diversity is key to a healthy gut.",
+                    "Vinaigrette: Whisk the residual orange juice with extra virgin olive oil and a pinch of salt to create a simple, bright dressing.",
+                    "Sweet-Savory Balance: The acidity of the orange segments cuts through the earthy, nutty flavor of the larger bean sprouts.",
+                    "Final Pop: Add a handful of fresh mint leaves. The mint provides a 'cooling' finish that makes this salad incredibly refreshing."
+                ],
+                tip: "MULTIVITAMIN IN A BOWL: This single recipe contains over 50 different micronutrients in highly bioavailable, living forms."
+            },
+            {
+                id: 36,
+                category: "Keto Snack",
+                title: "Crispy Chana Poppers",
+                time: "15 Min",
+                cals: "150 Kcal",
+                serves: "2 Adults",
+                ingredients: ["Black Chana Sprouts", "Roasted Cumin Powder", "Smoked Paprika", "Cold Pressed Olive Oil Spray"],
+                steps: [
+                    "The Dry Rule: Ensure your chana sprouts are bone-dry. Use a salad spinner or a hair dryer on the cool setting if necessary.",
+                    "Air-Fry Technique: Spray with a light mist of olive oil. Air-fry at 200°C for exactly 8 minutes, shaking the basket halfway through.",
+                    "Spicing the Heat: While the poppers are still piping hot, toss them with cumin and smoked paprika. The heat helps the spices bind.",
+                    "Crisping Phase: Let them cool for 2 minutes on a wire rack. They will continue to crisp up as the internal moisture evaporates.",
+                    "Storage: These can be stored in an airtight jar for up to 3 days, though they are best eaten while still slightly warm."
+                ],
+                tip: "GUILT-FREE CRUNCH: These provide the satisfying 'crunch' of processed chips but with zero refined carbs and massive amounts of plant protein."
+            },
+            {
+                id: 37,
+                category: "Hydration Lunch",
+                title: "Stuffed Cucumber Boats",
+                time: "10 Min",
+                cals: "125 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1 Large English Cucumber", "Fresh Mung Sprouts", "Greek Yogurt", "Fresh Dill", "Lemon Zest"],
+                steps: [
+                    "Hollowing: Slice the cucumber in half lengthwise. Use a small spoon to scoop out the watery seeds to create a stable 'boat'.",
+                    "The Filling: In a small bowl, mix mung sprouts with two tablespoons of thick Greek yogurt and finely chopped fresh dill.",
+                    "Stuffing Technique: Pack the hollowed cucumber tightly with the sprout mix. Press down firmly to ensure it stays in place.",
+                    "Bite-Sized Slicing: Cut the stuffed cucumber into 2-inch wide 'boats' or rounds. This makes them perfect for elegant party appetizers.",
+                    "Seasoning: Finish with fresh lemon zest and a generous crack of black pepper just before serving."
+                ],
+                tip: "NATURE'S COOLANT: This is the most hydrating recipe in the book. It's essentially solid water, perfect for recovering after a workout or a hot day."
+            },
+            {
+                id: 38,
+                category: "Healthy Italian",
+                title: "Sprout & Garlic Spaghetti",
+                time: "20 Min",
+                cals: "420 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Whole-Wheat Spaghetti", "Fresh Broccoli Sprouts", "6 Cloves Garlic", "Extra Virgin Olive Oil", "Parmesan"],
+                steps: [
+                    "Al Dente Boil: Cook the pasta in heavily salted boiling water. Start the sauce only when the pasta is 2 minutes away from being done.",
+                    "Garlic Infusion: Sauté smashed garlic cloves in a generous amount of olive oil over medium-low heat until they turn pale golden.",
+                    "The Merge: Add the cooked pasta directly to the garlic oil. Add a splash of the starchy pasta water to create a silky emulsion.",
+                    "The Hero Ingredient: Turn off the heat entirely. Toss in two massive cups of raw broccoli sprouts. The residual pasta heat will 'flash-melt' them.",
+                    "Finishing: Add a heavy dusting of aged Parmesan cheese. The sharp cheese complements the slightly spicy broccoli sprouts perfectly."
+                ],
+                tip: "SULFORAPHANE PRESERVATION: Adding raw sprouts to the hot pasta (off-heat) preserves the heat-sensitive sulforaphane, providing anti-cancer benefits."
+            },
+            {
+                id: 39,
+                category: "Fusion Comfort",
+                title: "Cheesy Sprout Quesadilla",
+                time: "15 Min",
+                cals: "380 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Large Whole Wheat Tortilla", "Aged Cheddar", "Mixed Bean Sprouts", "Fresh Jalapenos", "Avocado"],
+                steps: [
+                    "Pan Prep: Place a dry tortilla on a flat pan over medium heat. Wait for it to bubble slightly before adding any toppings.",
+                    "Cheese Foundation: Sprinkle a thin layer of cheddar. This acts as the 'glue' for the sprouts.",
+                    "The Core: Add a 1-inch layer of mixed sprouts and some sliced jalapenos. Add a second layer of cheese on top of the sprouts.",
+                    "The Fold: Fold the tortilla in half. Press down with a heavy spatula to compress the sprouts and melt the cheese into them.",
+                    "The Crisp: Cook until both sides are dark golden brown and the cheese is oozing out. Serve with fresh avocado slices."
+                ],
+                tip: "KID-FRIENDLY DETOX: This is the single most effective way to introduce sprouts to children or picky eaters. The cheese masks the 'healthy' taste perfectly."
+            },
+            {
+                id: 40,
+                category: "Gourmet Salad",
+                title: "Pear & Clover Elegance",
+                time: "8 Min",
+                cals: "140 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1 Ripe Bosc Pear", "Fresh Clover Sprouts", "Candied Walnuts", "Gorgonzola Cheese", "Honey Balsamic"],
+                steps: [
+                    "The Longitudinal Slice: Cut the pear into paper-thin, long vertical slices. Keep the skin on for texture and visual appeal.",
+                    "The Green Carpet: Scatter a thick layer of delicate clover sprouts across a flat white plate. This forms the visual base of the salad.",
+                    "Aesthetic Arrangement: Place the pear slices over the clover in a fanned-out pattern. Elegance is half the eating experience.",
+                    "The Sharp Note: Add tiny crumbles of Gorgonzola (or any blue cheese). The saltiness of the cheese is the perfect foil for the sweet pear.",
+                    "Crunch & Glaze: Sprinkle candied walnuts over the top and finish with a single, dramatic drizzle of honey balsamic reduction."
+                ],
+                tip: "FLAVOR BALANCE: The intense sweetness of the pear and the subtle, earthy bitterness of clover are a culinary match made in heaven."
+            },
+            {
+                id: 41,
+                category: "Weight Loss",
+                title: "The Metabolic Enzyme Soup",
+                time: "15 Min",
+                cals: "95 Kcal",
+                serves: "2 Adults",
+                ingredients: ["Celery Stalks", "White Onion", "Fresh Broccoli Sprouts", "Mineral Water", "Bay Leaf"],
+                steps: [
+                    "The Base Simmer: Roughly chop celery and onion. Simmer in 1L of mineral water with a bay leaf for 10 minutes until soft.",
+                    "Precision Blending: Remove the bay leaf and blend the vegetables and water until the soup is completely smooth and frothy.",
+                    "Bowl Prep: Pour the hot soup into bowls. Do not add the sprouts to the blender; they must remain whole and raw.",
+                    "The Infusion: Add a large handful of broccoli sprouts to the warm soup. Let them steep for 2 minutes before eating.",
+                    "Final Flavor: Add a squeeze of lemon and a dash of white pepper. This soup is designed to be very light but enzymatically active."
+                ],
+                tip: "FAT-BURNING PATHWAYS: This low-calorie soup triggers a 'Thermic Effect' that forces your body to burn stored fat just to digest the fiber."
+            },
+            {
+                id: 42,
+                category: "High Protein",
+                title: "Sprouted Chilla Masterclass",
+                time: "15 Min",
+                cals: "285 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Besan (Chickpea) Flour", "Fresh Mung Sprouts", "Fresh Chana Sprouts", "Minced Ginger", "A2 Ghee"],
+                steps: [
+                    "The Thick Batter: Mix besan flour with water until you have a thick, pancake-like paste. Add salt, turmeric, and minced ginger.",
+                    "Sprout Incorporation: Stir in a large amount of raw mung and chana sprouts. They should make the batter look 'lumpy' with nutrition.",
+                    "The Sizzle: Pour the batter onto a hot tawa with a drop of ghee. Use the back of a spoon to spread it out into a flat circle.",
+                    "Steam Cooking: Cover the pan with a lid. This is crucial; the steam cooks the bean sprouts from the inside while the bottom gets crispy.",
+                    "The Flip: Once the edges are brown, flip and cook the other side for 1 minute. The result is a crispy, protein-packed vegetarian pancake."
+                ],
+                tip: "ENERGY PROFILE: A single Chilla provides enough slow-release protein and complex carbohydrates to power you through a 3-hour hiking trip."
+            },
+            {
+                id: 43,
+                category: "Sugar Detox",
+                title: "Sprouted Mineral Infusion",
+                time: "2 Min",
+                cals: "15 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Methi (Fenugreek) Sprouts", "Fresh Mint", "Lemon Slices", "1L Filtered Water"],
+                steps: [
+                    "Jar Preparation: Add two tablespoons of fresh methi sprouts to a large 1L glass jar. Methi is the king of blood-sugar management.",
+                    "Herb & Citrus: Add a handful of crushed mint leaves and 3 slices of lemon. This masks any bitterness from the sprouts.",
+                    "Continuous Steeping: Fill the jar with cold, filtered water and let it sit in the refrigerator for at least 4 hours (ideally overnight).",
+                    "The Protocol: Sip this water throughout the day. Do not discard the sprouts; they continue to release minerals as you refill the water.",
+                    "The Reset: You can refill the jar 3 times before the sprouts lose their potency. It's the ultimate 'Living Water' for your cells."
+                ],
+                tip: "CRAVING CONTROL: Drinking this infused water consistently throughout the day prevents insulin spikes and kills sugar cravings almost instantly."
+            },
+            {
+                id: 44,
+                category: "Nutrient Dense",
+                title: "The Ultimate Alfalfa Sandwich",
+                time: "5 Min",
+                cals: "310 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Sprouted Whole-Grain Bread", "Lean Turkey or Tofu", "Fresh Alfalfa Sprouts", "Mashed Avocado", "Sea Salt"],
+                steps: [
+                    "Toasting Strategy: Lightly toast two slices of sprouted grain bread. Toasting creates a sturdy base that won't go soggy from the sprouts.",
+                    "The Fat Wall: Spread a thick layer of mashed avocado on both slices. Avocado acts as a moisture barrier and provides healthy fats.",
+                    "Protein Layer: Add your turkey or tofu slices. Season them directly with sea salt and black pepper for maximum flavor contact.",
+                    "The Sprout Stack: Add a massive, 3-inch thick layer of raw alfalfa sprouts. Use your hand to press them down into the avocado 'glue'.",
+                    "The Final Press: Place the second slice of bread on top and press the entire sandwich down firmly before slicing in half."
+                ],
+                tip: "MINERAL SOURCE: Alfalfa contains more trace minerals per gram than almost any other common salad green on the planet."
+            },
+            {
+                id: 45,
+                category: "Michelin Style",
+                title: "Salmon Flow on Clover Bed",
+                time: "20 Min",
+                cals: "420 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Fresh Salmon Fillet", "Delicate Clover Sprouts", "Lemongrass Infused Butter", "Pink Salt", "Edible Flowers"],
+                steps: [
+                    "Hot Sear: Cook the salmon fillet skin-side down in a very hot pan until the skin is like glass and the flesh is just opaque.",
+                    "The Butter Baste: Add lemongrass butter to the pan and spoon it over the fish for the final 60 seconds of cooking.",
+                    "The Presentation: Create a thick, airy bed of clover sprouts on an elegant plate. Avoid flattening the sprouts; keep them light.",
+                    "The Thermal Merge: Place the piping hot salmon directly onto the center of the cool clover. The contrast in temperatures is divine.",
+                    "Garnish Mastery: Finish with a pinch of pink salt and a few edible flowers for a dish that belongs in a fine-dining establishment."
+                ],
+                tip: "VIBRANCY: The combination of the cool, delicate sprouts and the fatty, hot fish is a masterclass in culinary texture and temperature."
+            },
+            {
+                id: 46,
+                category: "Quick Lunch",
+                title: "Sprouted Hummus Fuel Wrap",
+                time: "5 Min",
+                cals: "290 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Large Tortilla", "Homemade Sprouted Lentil Hummus", "Fresh Mixed Sprouts", "Greek Yogurt", "Chunky Salsa"],
+                steps: [
+                    "The Hummus Wall: Spread a very thick layer of homemade sprouted lentil hummus across the entire surface of the tortilla.",
+                    "The Living Core: Add a massive, loose handful of mixed raw sprouts. The variety adds depth to the simple wrap.",
+                    "Rolling Excellence: Roll the tortilla as tightly as possible, tucking the sides in carefully. A tight roll is easier to eat on the go.",
+                    "Center Cut: Slice the wrap in the center on a sharp diagonal. This allows you to see the vibrant, living sprout filling.",
+                    "The Double Dip: Serve with a side of Greek yogurt mixed with salsa. It provides a creamy, spicy finish to every bite."
+                ],
+                tip: "GUT HEALTH MAX: You are getting double the enzymes here—living enzymes from the sprouted hummus and raw enzymes from the fresh sprouts."
+            },
+            {
+                id: 47,
+                category: "Tropical Detox",
+                title: "Mango & Mung Golden Bowl",
+                time: "10 Min",
+                cals: "185 Kcal",
+                serves: "1 Adult",
+                ingredients: ["1 Ripe Alphonso Mango", "Fresh Mung Sprouts", "Fresh Lime juice", "Chili Silk (Threads)", "Mint Leaves"],
+                steps: [
+                    "The Golden Dice: Peel and cut the ripe mango into beautiful 1cm cubes. Use a high-quality mango for the best sweetness.",
+                    "Sprout Fusion: In a chilled glass bowl, gently toss the mango cubes with fresh mung sprouts. The colors should be vibrant yellow and green.",
+                    "Spicy Accent: Add a tiny amount of chili silk (or red chili flakes). The heat elevates the natural sweetness of the fruit.",
+                    "Citrus Bath: Squeeze fresh lime juice heavily over the contents. The acid prevents the mango from oxidizing and keeps it bright.",
+                    "Deep Chill: Place the bowl in the refrigerator for 10 minutes before serving. This is best enjoyed as a cold, refreshing afternoon snack."
+                ],
+                tip: "VITAMIN A SYNERGY: Mango and Mung sprouts together provide a massive dose of Vitamin A and Beta-Carotene, essential for eye health and skin glow."
+            },
+            {
+                id: 48,
+                category: "Liquid Breakfast",
+                title: "The Invisible Sprout Smoothie",
+                time: "5 Min",
+                cals: "210 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Organic A2 Milk", "1 Ripe Banana", "1 tbsp Chia Seeds", "1/2 Cup Mixed Sprouts", "Raw Manuka Honey"],
+                steps: [
+                    "Liquids First: Pour the milk into the blender first. This ensures the blades can create a whirlpool without getting stuck.",
+                    "The Hidden Power: Add the banana, chia seeds, and the mixed sprouts. Mixed sprouts are virtually tasteless when blended with fruit.",
+                    "Sweetening: Add a teaspoon of raw Manuka honey. Honey is a natural antimicrobial that supports the sprout enzymes.",
+                    "High-Speed Processing: Blend on the highest setting for a full 60 seconds. You want the sprouts to be completely pulverized into the liquid.",
+                    "The Garnish: Pour into a tall glass and top with 2-3 whole sprouts for a visual clue of the hidden nutrition inside."
+                ],
+                tip: "INVISIBLE NUTRITION: You won't even taste the sprouts, but you will feel a significant and sustained energy boost throughout your entire morning."
+            },
+            {
+                id: 49,
+                category: "Elegant Side",
+                title: "Stuffed Heirloom Tomatoes",
+                time: "15 Min",
+                cals: "135 Kcal",
+                serves: "2 Adults",
+                ingredients: ["4 Large Heirloom Tomatoes", "Raw Alfalfa Sprouts", "Feta Cheese", "Fresh Basil Leaves", "Balsamic Glaze"],
+                steps: [
+                    "The Hollow: Slice the tops off the tomatoes and use a spoon to carefully remove the seeds and pulp. Save the pulp for a soup later.",
+                    "Filling Mix: In a small bowl, combine a large handful of alfalfa sprouts with crumbled feta and finely chiffonaded basil.",
+                    "Packing the Core: Stuff the hollowed-out tomatoes with the sprout-cheese mixture. Pack it tightly so it doesn't fall out when sliced.",
+                    "Infusion Time: Let the stuffed tomatoes rest in the refrigerator for 20 minutes. This allows the basil aroma to penetrate the sprouts.",
+                    "The Finish: Slice each tomato in half vertically and drizzle with a thick balsamic glaze just before serving as a gourmet side dish."
+                ],
+                tip: "LYCOPENE ABSORPTION: The antioxidants in the tomato pair perfectly with the minerals in the alfalfa and the healthy fats in the feta cheese."
+            },
+            {
+                id: 50,
+                category: "Metabolic Shot",
+                title: "The Morning Sprout Reset",
+                time: "2 Min",
+                cals: "45 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Handful of Alfalfa or Wheatgrass Sprouts", "Fresh Apple Juice", "1/2 Fresh Lemon", "Ginger Juice"],
+                steps: [
+                    "Extraction: Use a cold-press juicer or a high-speed blender (with straining) to extract the intense green juice from the sprouts.",
+                    "The Catalyst: Mix the sprout juice with a splash of fresh apple juice to make it palatable and provide a touch of natural sugar.",
+                    "The Acid Kick: Add a heavy squeeze of lemon. The acidity is crucial for alkalizing the body first thing in the morning.",
+                    "Spicy Finish: Add a teaspoon of fresh ginger juice to kickstart your circulatory system and aid digestion for the day ahead.",
+                    "The Protocol: Drink the shot in one go. It is best taken on an empty stomach, precisely 20 minutes before your morning coffee."
+                ],
+                tip: "INSTANT ALKALIZER: This potent shot resets your body's pH level almost instantly, neutralizing acidity and providing a massive wave of oxygen to your cells."
+            },
+            {
+                id: 51,
+                category: "Healthy Dessert",
+                title: "Chocolate Buckwheat Energy Truffles",
+                time: "15 Min",
+                cals: "190 Kcal",
+                serves: "2 Adults",
+                ingredients: ["10 Medjool Dates", "1 Cup Sprouted Buckwheat", "Raw Cocoa Powder", "Shredded Coconut", "Vanilla Extract"],
+                steps: [
+                    "Paste Creation: Blend the Medjool dates and sprouted buckwheat in a food processor until it forms a very thick, sticky paste.",
+                    "Chocolate Infusion: Pulse in the raw cocoa powder and a splash of vanilla. The buckwheat provides a subtle 'nutty' crunch to the truffles.",
+                    "Hand Rolling: Roll the paste into small, bite-sized balls (roughly the size of a golf ball) using slightly damp hands.",
+                    "The Coating: Roll each truffle in unsweetened shredded coconut until they are completely covered in white 'snow'.",
+                    "Setting Temperature: Place the truffles in the freezer for at least 30 minutes. This gives them a fudgy, decadent texture."
+                ],
+                tip: "GRAIN-FREE INDULGENCE: Buckwheat is actually a seed, not a grain. These truffles are 100% gluten-free, nut-free, and contain zero refined sugars."
+            },
+            {
+                id: 52,
+                category: "The Final Masterpiece",
+                title: "The SproutMaster's Conclusion Bowl",
+                time: "12 Min",
+                cals: "210 Kcal",
+                serves: "1 Adult",
+                ingredients: ["Every Remaining Sprout Variety", "Cold Pressed Olive Oil", "Thick Lemon Juice", "Maldon Sea Salt Flakes"],
+                steps: [
+                    "The Gathering: Collect all the remaining sprouts from your jars. This bowl represents the diversity of your entire sprouting journey.",
+                    "The Final Rinse: Give the sprouts one final rinse in ice-cold water to ensure they are at their peak crispness and vitality.",
+                    "The Dress: Use a massive amount of high-quality olive oil and thick, fresh lemon juice. Avoid any other spices to let the sprouts shine.",
+                    "Seasoning from Height: Sprinkle Maldon sea salt flakes from a height of 12 inches to ensure a perfectly even distribution of salt.",
+                    "Celebration: Sit down, breathe deeply, and enjoy your final bowl. You have completed the 52-recipe Professional Sprout Masterclass!"
+                ],
+                tip: "CONGRATULATIONS: You are now a certified Sprouting Professional. Your cells are vibrating with living energy and your health has been transformed."
+            }
+        ];
+
+        const container = document.getElementById('recipe-container');
+        recipes.forEach(r => {
+            const card = `
+                <div class="recipe-card page-break">
+                    <div class="category-badge">${r.category}</div>
+                    <div class="recipe-header">
+                        <div class="recipe-title">${r.id}. ${r.title}</div>
+                        <div class="recipe-meta">Time: <span>${r.time}</span> Calories: <span>${r.cals}</span> Serves: <span>${r.serves || '1 Adult'}</span></div>
+                    </div>
+                    <div class="recipe-columns">
+                        <div class="ingredients">
+                            <div class="column-title">Ingredients:</div>
+                            <ul>${r.ingredients.map(i => `<li>${i}</li>`).join('')}</ul>
+                        </div>
+                        <div class="instructions">
+                            <div class="column-title">Instructions:</div>
+                            <ol>${r.steps.map(s => `<li>${s}</li>`).join('')}</ol>
+                        </div>
+                    </div>
+                    ${r.tip ? `<div class="pro-tip-box"><span>💡</span> ${r.tip}</div>` : ''}
+                </div>
+            `;
+            container.innerHTML += card;
+        });
+    </script>
+</body>
+
+</html>
