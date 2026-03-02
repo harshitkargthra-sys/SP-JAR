@@ -53,30 +53,45 @@
         }
 
         .container {
-            width: 210mm;
+            width: 100%;
+            max-width: 210mm;
             margin: 0 auto;
-            padding: 20mm;
+            padding: 20px;
             background: white;
         }
 
         .cover {
-            width: 210mm;
-            height: 297mm;
+            width: 100%;
+            max-width: 210mm;
+            min-height: 100vh;
             background: linear-gradient(135deg, #1B4332 0%, #081C15 100%);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 100px 80px;
+            padding: 60px 40px;
             text-align: center;
             color: white;
             page-break-after: always;
         }
 
+        @media print {
+            .container {
+                width: 210mm;
+                padding: 20mm;
+            }
+
+            .cover {
+                width: 210mm;
+                height: 297mm;
+                padding: 100px 80px;
+            }
+        }
+
         .cover-title {
             font-family: 'Playfair Display', serif;
-            font-size: 6rem;
+            font-size: clamp(3rem, 15vw, 6rem);
             line-height: 1;
-            margin: 40px 0;
+            margin: 20px 0;
         }
 
         .recipe-card {
@@ -135,6 +150,32 @@
             border-top: 1px solid #eee;
             padding-top: 20px;
             margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .recipe-columns {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .recipe-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .recipe-meta {
+                text-align: left;
+            }
+
+            .cover-title {
+                font-size: 4rem;
+            }
+        }
+
+        @media print {
+            .recipe-columns {
+                grid-template-columns: 1fr 1.3fr;
+            }
         }
 
         .column-title {
@@ -1107,6 +1148,20 @@
             `;
             container.innerHTML += card;
         });
+
+        // Add Final Community CTA
+        const communityCTA = `
+            <div class="recipe-card no-print" style="background: linear-gradient(135deg, #1B4332 0%, #081C15 100%); color: white; text-align: center; border: none; padding: 60px 40px;">
+                <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 20px;">Stay Inspired</h2>
+                <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Your journey doesn't end here. Join our growing community for daily sprouting hacks, aesthetic kitchen inspiration, and exclusive healthy living tips.
+                </p>
+                <a href="https://www.instagram.com/homixolifestyle/" target="_blank" style="background: white; color: #1B4332; padding: 20px 40px; border-radius: 50px; text-decoration: none; font-weight: 800; font-size: 1.1rem; display: inline-block;">
+                    Follow @homixolifestyle on Instagram →
+                </a>
+            </div>
+        `;
+        container.innerHTML += communityCTA;
     </script>
 </body>
 
